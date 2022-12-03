@@ -1,0 +1,14 @@
+package mercadoabasto.clientes;
+
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionCarenciaDigitosException;
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionClaveInvalidaException;
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionContieneMasDeDosGuionesException;
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionDigitosInvalidosException;
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionExcesoDigitosException;
+import mercadoabasto.exepciones.ClaveUnicaIdentificacionGuionesEnUbicacionesErroneasException;
+
+public class Cuit extends ClaveUnicaIdentificacion{
+    public Cuit(String numeroClaveUnicaIdentificacion) throws ClaveUnicaIdentificacionCarenciaDigitosException, ClaveUnicaIdentificacionClaveInvalidaException, ClaveUnicaIdentificacionContieneMasDeDosGuionesException, ClaveUnicaIdentificacionDigitosInvalidosException, ClaveUnicaIdentificacionExcesoDigitosException, ClaveUnicaIdentificacionGuionesEnUbicacionesErroneasException{
+        super(numeroClaveUnicaIdentificacion);
+    }
+}
